@@ -17,3 +17,8 @@ set(TEST board_tests)
 add_executable(${TEST})
 target_sources(${TEST} PUBLIC board_tests.c)
 target_link_libraries(${TEST} PUBLIC cunit board)
+
+enable_testing()
+add_test(board_testing ${TEST})
+
+install(TARGETS game)
