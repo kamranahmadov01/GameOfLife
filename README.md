@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Game Of Life
 Game of Life project in C
 
@@ -36,9 +34,3 @@ Run:
 ```./game ```  
 ## To run tests
 ``` ctest -V ``` 
-=======
-# GameOfLife
->>>>>>> f589d3053f2f6061354b353abcd2a2182fce3e09
-=======
-# GameOfLife
->>>>>>> edeaba0cab7b95daa714ba4ba1624b1bd2e09170
