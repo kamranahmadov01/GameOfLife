@@ -50,32 +50,7 @@ int main(int argc, char const *argv[]){
         perror("Invalid option... Exitting...\n");
         return -1;
     }
-
-    switch (ini_opt){
-        case '1':
-            board = randomize_board(board);
-            break;
-        case '2':
-            /* blinker */
-            board.cell[2][1] = ALIVE;
-            board.cell[2][2] = ALIVE;
-            board.cell[2][3] = ALIVE;
-            break;
-
-        case '3':
-            /* glider */
-            board.cell[1][1] = ALIVE;
-            board.cell[2][2] = ALIVE;
-            board.cell[2][3] = ALIVE;
-            board.cell[3][1] = ALIVE;
-            board.cell[3][2] = ALIVE;
-            break;
-
-        default:
-            perror("Invalid option... Exitting...\n");
-            return -1;
-    }
-
+    
     if(if_opt == '1') // gui
         gui_run(board);
     else 
