@@ -33,6 +33,24 @@ int main(int argc, char const *argv[]){
         "Choose initial board state: "
     );  getchar(); // to consume leading space
     ini_opt = getchar();
+
+    if(ini_opt == '1'){
+        board = randomize_board(board);
+    }else if(ini_opt == '2'){
+        board.cell[2][1] = ALIVE;
+        board.cell[2][2] = ALIVE;
+        board.cell[2][3] = ALIVE;
+    }else if(ini_opt == '3'){
+        board.cell[1][1] = ALIVE;
+        board.cell[2][2] = ALIVE;
+        board.cell[2][3] = ALIVE;
+        board.cell[3][1] = ALIVE;
+        board.cell[3][2] = ALIVE;
+    }else{
+        perror("Invalid option... Exitting...\n");
+        return -1;
+    }
+
     switch (ini_opt){
         case '1':
             board = randomize_board(board);
