@@ -8,6 +8,8 @@ set(HEADERS gui.h)
 
 set(CMAKE_BUILD_TYPE Release)
 
+find_package(SDL2 REQUIRED)
+
 include_directories(${SDL2_INCLUDE_DIRS})
 
 add_library(gui)
