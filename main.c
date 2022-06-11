@@ -1,6 +1,8 @@
 #include "board.h"
 #include "gui.h"
 
+
+// this is the main function
 int main(int argc, char const *argv[]){
     char board_type_opt, ini_opt, if_opt;
     printf(
