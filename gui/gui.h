@@ -13,4 +13,4 @@ extern SDL_Event event;
 
 void gui_run(Board board);
 
-#endif // __GUI_H__
+#endif
