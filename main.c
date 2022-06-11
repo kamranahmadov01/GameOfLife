@@ -34,6 +34,7 @@ int main(int argc, char const *argv[]){
     );  getchar(); // to consume leading space
     ini_opt = getchar();
 
+    // randomize board
     if(ini_opt == '1'){
         board = randomize_board(board);
     }else if(ini_opt == '2'){
@@ -50,7 +51,7 @@ int main(int argc, char const *argv[]){
         perror("Invalid option... Exitting...\n");
         return -1;
     }
-    
+
     if(if_opt == '1') // gui
         gui_run(board);
     else 
